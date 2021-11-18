@@ -7,8 +7,9 @@ include_directories(open-mp)
 
 add_executable(parallel_computing
         open-mp/main.c
-        open-mp/utils.c
-        open-mp/utils.h)
+        #open-mp/utils.c
+        #open-mp/utils.h
+        )
 
 # openMP
 FIND_PACKAGE(OpenMP REQUIRED)

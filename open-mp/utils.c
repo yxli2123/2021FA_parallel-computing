@@ -60,7 +60,7 @@ double pow_(double x, int n) {
 double value_poly(const double* array, double x, int size) {
     double value = 0;
     for (int i = 1; i < size - 1; i++) {
-        value += array[i] * pow_(x, i);
+        value += array[i] * pow(x, i);
     }
     return value;
 }
@@ -92,7 +92,7 @@ void operate(double* array, char operator, double scale, int size) {
                 break;
             }
             default: {
-                array[i] = pow_(array[i], scale);
+                array[i] = pow(array[i], scale);
             }
         }
     }
